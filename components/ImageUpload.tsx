@@ -40,6 +40,14 @@ export const ImageUpload: React.FC<ImageUploadProps> = ({
       
       reader.readAsDataURL(file);
     }
+
+    // Reset the input value to ensure the onChange event triggers 
+    // even if the user selects the same file again (e.g. after clearing).
+    if (inputRef.current) {
+      inputRef.current.value = '';
+    } else {
+      e.target.value = '';
+    }
   };
 
   return (
