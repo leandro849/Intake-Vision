@@ -1,0 +1,5 @@
+{
+  "name": "Google DeepMind - Vibe Code with Gemini 3 Pro in AI Studio",
+  "description": "A clinical intake validation tool that analyzes insurance cards and medical referrals using AI to verify coverage eligibility and data consistency.",
+  "requestFramePermissions": []
+}
